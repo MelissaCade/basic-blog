@@ -2,7 +2,7 @@
   --white: white;
   --dark-blue: rgb(3, 3, 27);
   --med-blue: rgb(73, 73, 156);
-  --light-blue: rgb(208, 208, 236);
+  --light-blue: rgb(225, 225, 248);
   --peach: rgb(255, 210, 169);
   --med-peach: rgb(255, 168, 87);
 }
@@ -10,13 +10,20 @@
   background-color: var(--dark-blue);
   color: var(--white);
 }
-.dark main {
+main {
   height: 100vh;
+  width: 100%;
 }
 html {
   font-size: 62.5%;
 }
-
+#theme-switcher {
+  height: 4rem;
+  width: 4rem;
+  align-self: center;
+  margin: 2rem 4rem;
+  cursor: pointer;
+}
 header {
   border-bottom: 1rem solid var(--white);
   height: auto;
@@ -29,9 +36,7 @@ h1 {
   color: var(--white);
   font-size: 5rem;
   margin: 2rem 4rem;
-  text-align: left;
 }
-
 /* Light Mode */
 .light * {
   background-color: var(--light-blue);
@@ -40,80 +45,19 @@ h1 {
 .light main {
   height: 100vh;
 }
-
-.toggle {
-  width: auto;
-  display: inline-flex;
-  align-items: center;
-}
-/* Styling the Switch button */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 6rem;
-  height: 3rem;
+.light #theme-switcher {
+  height: 4rem;
+  width: 4rem;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--light-blue);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 2rem;
-  width: 2rem;
-  left: 0.5rem;
-  bottom: 0.5rem;
-  background-color: var(--med-peach);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: var(--med-blue);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px var(--med-blue);
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 3rem;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.row {
-  margin: 2rem;
-  display: flex;
-}
-.col {
-  margin: 0.5rem;
-  font-size: 2rem;
-  color: var(--white);
+@media (max-width: 730px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 2rem 0 2rem;
+  }
 }

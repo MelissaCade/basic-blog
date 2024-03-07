@@ -1,1 +1,29 @@
 @import url(./styles.css);
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+.full-post {
+  border: 0.5rem solid white;
+  width: auto;
+  height: auto;
+  display: block;
+  padding: 2rem;
+  margin: 4rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+h4 {
+  font-size: 2rem;
+  font-style: italic;
+}
+p {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+hr {
+  border: 0.1rem solid var(--light-blue);
+}

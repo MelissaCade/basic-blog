@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- exported from Silhouette Studio® Business Edition V4.5.770ssbe -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="304.8mm" height="304.8mm" viewBox="0 0 304.8 304.8">
+<defs>
+<path id="path_6111672606c76af94a83eac68bce2996" d="M 151.8082 184.1424 C 134.665 183.7072 120.8742 169.6469 120.8742 152.4 C 120.8742 134.8793 135.1063 120.6472 152.627 120.6472 C 158.3759 120.6472 163.7709 122.1795 168.4251 124.8575 L 168.502 124.903 L 167.9191 125.2478 C 158.7535 130.8204 152.6242 140.902 152.6242 152.4 C 152.6242 163.8979 158.7535 173.9796 167.9191 179.5521 L 168.502 179.897 L 168.4251 179.9425 C 163.7709 182.6205 158.376 184.1528 152.627 184.1528 C 152.3532 184.1528 152.0803 184.1493 151.8082 184.1424 Z" fill-rule="evenodd" fill="#49499C" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="path_b5f6e1c7cb6dec74a275fcc72263f427" d="M 203.4193 152.3785 C 203.4193 180.4254 180.6367 203.208 152.5898 203.208 C 124.5429 203.208 101.7603 180.4254 101.7603 152.3785 C 101.7603 124.3316 124.5429 101.5491 152.5898 101.5491 C 180.6367 101.5491 203.4193 124.3316 203.4193 152.3785 Z" fill-rule="evenodd" fill="none" fill-opacity="1" stroke="#FFFFFF" stroke-opacity="1" stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"/>
+</defs>
+<g>
+<g>
+<g>
+<g>
+<use xlink:href="#path_6111672606c76af94a83eac68bce2996"/>
+</g>
+</g>
+</g>
+<g>
+<use xlink:href="#path_b5f6e1c7cb6dec74a275fcc72263f427"/>
+</g>
+</g>
+</svg>
