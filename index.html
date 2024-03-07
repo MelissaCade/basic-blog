@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Blog Input</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+  </head>
+  <body class="container dark">
+    <header>
+      <h1>Blog Like It's the End of the World!</h1>
+      <div class="row toggle">
+        <div class="col">
+          <p>DARK</p>
+        </div>
+        <label class="switch col">
+          <input type="checkbox" id="theme-switcher">
+          <span class="slider round"></span>
+        </label>
+        <div class="col">
+          <p>LIGHT</p>
+        </div>
+    </header>
+    <main>
+      <h2>What's on your mind?</h2>
+      <form>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="Jane Doe" />
+        </div>
+        <div class="input-group">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" placeholder="Blog Title" />
+        </div>
+        <div class="input-post">
+            <label for="blog-post">Blog Post</label> 
+            <textarea name="blog-post" id="blog-post" placeholder="Expound, illuminate, and soliloquize..."></textarea>
+        </div>
+        <div class="button-row">
+            <button id="post">Post</button>
+        </div>
+      </form>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
+  </body>
 </html>
