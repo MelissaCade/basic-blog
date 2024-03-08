@@ -6,8 +6,7 @@ const nameEl = document.getElementById("#username-card");
 
 backButton.addEventListener("click", function (event) {
   event.preventDefault();
-  window.location.href =
-    "file:///C:/Users/proud/Desktop/Coding-Bootcamp/my-projects/basic-blog/index.html";
+  window.location.href = "https://melissacade.github.io/basic-blog/";
 });
 
 let username = localStorage.getItem("usernameEntry");

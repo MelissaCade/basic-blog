@@ -14,7 +14,6 @@ postButton.addEventListener("click", function (event) {
     localStorage.setItem("usernameEntry", username);
     localStorage.setItem("titleEntry", title);
     localStorage.setItem("blogEntry", post);
-    window.location.href =
-      "file:///C:/Users/proud/Desktop/Coding-Bootcamp/my-projects/basic-blog/blog.html";
+    window.location.href = "blog.html";
   }
 });
