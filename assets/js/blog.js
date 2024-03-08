@@ -21,6 +21,7 @@ function addNewCard() {
   newTitle.setAttribute("class", "title-card");
   newTitle.textContent = title;
   const divider = document.createElement("hr");
+  const divider1 = document.createElement("hr");
   const newPost = document.createElement("p");
   newPost.setAttribute("class", "paragraph-card");
   newPost.textContent = blog;
@@ -29,7 +30,7 @@ function addNewCard() {
   newUser.textContent = username;
 
   newCard.appendChild(newTitle);
-  newCard.appendChild(divider);
+  newCard.appendChild(divider1);
   newCard.appendChild(newPost);
   newCard.appendChild(divider);
   newCard.appendChild(newUser);
