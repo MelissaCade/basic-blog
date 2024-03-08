@@ -14,6 +14,6 @@ postButton.addEventListener("click", function (event) {
     localStorage.setItem("usernameEntry", username);
     localStorage.setItem("titleEntry", title);
     localStorage.setItem("blogEntry", post);
-    window.location.href = "blog.html";
+    window.location.href = "https://melissacade.github.io/basic-blog/blog.html";
   }
 });
