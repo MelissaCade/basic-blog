@@ -1,8 +1,8 @@
 const backButton = document.querySelector("#back");
-const mainEl = document.getElementById("#blog-body");
-const titleEl = document.getElementById("#title-card");
-const postEl = document.getElementById("#paragraph-card");
-const nameEl = document.getElementById("#username-card");
+const mainEl = document.getElementById("blog-body");
+const titleEl = document.getElementById("title-card");
+const postEl = document.getElementById("paragraph-card");
+const nameEl = document.getElementById("username-card");
 
 backButton.addEventListener("click", function (event) {
   event.preventDefault();
