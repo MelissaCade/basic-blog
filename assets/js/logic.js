@@ -14,7 +14,3 @@ themeSwitcher.addEventListener("click", function () {
     themeSwitcher.setAttribute("src", "./assets/images/sun.png");
   }
 });
-
-//event listener for click on post button
-//save input to local storage?
-//when redirected, put stuff on new page?

@@ -1,11 +1,24 @@
 @import url(./styles.css);
-
+#back {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  font-size: 2rem;
+  width: 10rem;
+  height: 4rem;
+  margin: 2rem;
+  align-self: center;
+}
+header div {
+  display: flex;
+  align-items: center;
+}
 main {
   display: flex;
   flex-direction: column;
 }
+
 .full-post {
-  border: 0.5rem solid white;
+  border: 0.5rem solid var(--light-blue);
   width: auto;
   height: auto;
   display: block;
@@ -26,4 +39,20 @@ p {
 }
 hr {
   border: 0.1rem solid var(--light-blue);
+}
+/*Light Mode Settings*/
+.light hr {
+  border: 0.1rem solid var(--dark-blue);
+}
+.light #post {
+  border: 0.5rem solid var(--dark-blue);
+}
+.light #back {
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+}
+@media (max-width: 730px) {
+  header div {
+    justify-content: center;
+  }
 }

@@ -11,20 +11,28 @@
   <body class="container dark">
     <header>
       <h1>Blog Like It's the End of the World!</h1>
-      <img
-        src="./assets/images/sun.png"
-        id="theme-switcher"
-        alt="sun graphic"
-      />
+      <div>
+        <button id="back">Back</button>
+        <img
+          src="./assets/images/sun.png"
+          id="theme-switcher"
+          alt="sun graphic"
+        />
+      </div>
     </header>
-    <main>
-      <card class="full-post">
-        <h3 class="title-card">Title</h3>
+    <main id="blog-body">
+      <div class="full-post" id="post">
+        <h3 class="title-card">An Ode to Blogging</h3>
         <hr />
-        <p class="paragraph-card">Blog Content</p>
+        <p class="paragraph-card">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+          dolor temporibus necessitatibus cumque qui dicta, vero magnam ea
+          eligendi. Necessitatibus, suscipit commodi. Provident mollitia,
+          quisquam numquam animi asperiores doloremque vel.
+        </p>
         <hr />
-        <h4 class="username-card">User Name</h4>
-      </card>
+        <h4 class="username-card">BookWyrm</h4>
+      </div>
     </main>
     <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/blog.js"></script>
