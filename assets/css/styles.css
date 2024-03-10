@@ -11,7 +11,8 @@
   color: var(--white);
 }
 main {
-  height: 100vh;
+  height: auto;
+  min-height: 81vh;
   width: 100%;
 }
 html {
