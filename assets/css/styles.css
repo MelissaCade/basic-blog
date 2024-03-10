@@ -37,6 +37,19 @@ h1 {
   font-size: 5rem;
   margin: 2rem 4rem;
 }
+h5 {
+  color: var(--white);
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+footer {
+  height: 6rem;
+  border-top: 1rem solid var(--white);
+}
+footer a {
+  text-decoration: none;
+}
 /* Light Mode */
 .light * {
   background-color: var(--light-blue);

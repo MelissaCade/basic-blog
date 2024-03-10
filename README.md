@@ -6,7 +6,7 @@ Party (blog) Like It's 1999!
 
 This is a basic blog entry form and display. It has day and night mode, and a simple format. This project was my first time using local storage, as well as creating elements using JavaScript.
 
-## Link to Live Page
+## Link to Live Pages
 
 https://melissacade.github.io/basic-blog/
 

@@ -1,33 +1,28 @@
 const backButton = document.querySelector("#back");
 const mainEl = document.getElementById("blog-body");
-const titleEl = document.getElementById("title-card");
-const postEl = document.getElementById("paragraph-card");
-const nameEl = document.getElementById("username-card");
 
 backButton.addEventListener("click", function (event) {
   event.preventDefault();
   window.location.href = "https://melissacade.github.io/basic-blog/";
+  // window.location.href = "index.html";
 });
 
-let username = localStorage.getItem("usernameEntry");
-let title = localStorage.getItem("titleEntry");
-let blog = localStorage.getItem("blogEntry");
-
 function addNewCard() {
+  const newBlogPost = JSON.parse(localStorage.getItem("newPost"));
   const newCard = document.createElement("div");
   newCard.setAttribute("class", "full-post");
   newCard.setAttribute("id", "post");
   const newTitle = document.createElement("h3");
   newTitle.setAttribute("class", "title-card");
-  newTitle.textContent = title;
+  newTitle.textContent = newBlogPost.title;
   const divider = document.createElement("hr");
   const divider1 = document.createElement("hr");
   const newPost = document.createElement("p");
   newPost.setAttribute("class", "paragraph-card");
-  newPost.textContent = blog;
+  newPost.textContent = newBlogPost.post;
   const newUser = document.createElement("h4");
   newUser.setAttribute("class", "username-card");
-  newUser.textContent = username;
+  newUser.textContent = newBlogPost.username;
 
   newCard.appendChild(newTitle);
   newCard.appendChild(divider1);
