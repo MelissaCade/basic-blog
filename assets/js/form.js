@@ -2,6 +2,7 @@ const postButton = document.querySelector("#post");
 const usernameEntry = document.querySelector("#username");
 const titleEntry = document.querySelector("#title");
 const blogEntry = document.querySelector("#blog-post");
+const postData = JSON.parse(localStorage.getItem("postData")) || [];
 
 postButton.addEventListener("click", function (event) {
   event.preventDefault();
@@ -11,6 +12,7 @@ postButton.addEventListener("click", function (event) {
     title: document.querySelector("#title").value,
     post: document.querySelector("#blog-post").value,
   };
+  postData.push(newPost);
 
   if (username === "" || title === "" || post === "") {
     window.alert(
@@ -18,7 +20,7 @@ postButton.addEventListener("click", function (event) {
     );
     return;
   } else {
-    localStorage.setItem("newPost", JSON.stringify(newPost));
+    localStorage.setItem("postData", JSON.stringify(postData));
     window.location.href = "https://melissacade.github.io/basic-blog/blog.html";
     // window.location.href = "blog.html";
   }
